@@ -2,6 +2,7 @@ package com.laucherish.downloadtest;
 
 import android.os.AsyncTask;
 import android.os.Environment;
+import android.support.annotation.NonNull;
 
 import java.io.File;
 import java.io.InputStream;
@@ -28,7 +29,7 @@ public class DownloadTask extends AsyncTask<String, Integer, Integer> {
 
     private DownloadInterface mListener;
 
-    public DownloadTask(DownloadInterface listener) {
+    public DownloadTask(@NonNull DownloadInterface listener) {
         mListener = listener;
     }
 
