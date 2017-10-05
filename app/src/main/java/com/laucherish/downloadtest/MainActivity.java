@@ -17,7 +17,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button mBtnStart, mBtnPause, mBtnCancel;
+    private Button mBtnStart, mBtnPause, mBtnCancel, mBtnStop;
 
     private DownloadService.DownloadBinder mBinder;
 
@@ -40,9 +40,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnStart = (Button) findViewById(R.id.btn_start);
         mBtnPause = (Button) findViewById(R.id.btn_pause);
         mBtnCancel = (Button) findViewById(R.id.btn_cancel);
+        mBtnStop = (Button) findViewById(R.id.btn_stop);
         mBtnStart.setOnClickListener(this);
         mBtnPause.setOnClickListener(this);
         mBtnCancel.setOnClickListener(this);
+        mBtnStop.setOnClickListener(this);
 
         Intent intent = new Intent(this, DownloadService.class);
         startService(intent);
@@ -69,6 +71,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_cancel:
                 mBinder.cancelDownload();
+                break;
+            case R.id.btn_stop:
+                stopService(new Intent(MainActivity.this, DownloadService.class));
                 break;
         }
     }
