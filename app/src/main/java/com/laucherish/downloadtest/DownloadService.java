@@ -96,6 +96,7 @@ public class DownloadService extends Service {
             if (mDownloadTask != null) {
                 mDownloadTask.cancelDownload();
             }
+            // TODO 取消下载之后删除已下载文件
         }
     }
 
