@@ -70,7 +70,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_start:
                 String url = "http://ftp.jaist.ac.jp/pub/eclipse/oomph/epp/oxygen/R/eclipse-inst-mac64.tar.gz";
                 mBinder.startDownload(url);
-
                 break;
             case R.id.btn_pause:
                 mBinder.pauseDownload();
