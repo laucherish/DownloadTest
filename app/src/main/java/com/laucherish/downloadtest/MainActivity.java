@@ -74,6 +74,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_pause:
                 mBinder.pauseDownload();
+
                 break;
             case R.id.btn_cancel:
                 mBinder.cancelDownload();
