@@ -76,7 +76,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_cancel:
                 mBinder.cancelDownload();
-
                 break;
             case R.id.btn_stop:
                 stopService(new Intent(MainActivity.this, DownloadService.class));
