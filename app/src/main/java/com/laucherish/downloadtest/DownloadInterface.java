@@ -11,7 +11,6 @@ public interface DownloadInterface {
 
 
 
-
     void onSuccess();
 
     void onFailed();
