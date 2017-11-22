@@ -9,7 +9,6 @@ public interface DownloadInterface {
     void onProgress(int progress);
 
 
-
     void onSuccess();
 
     void onFailed();
