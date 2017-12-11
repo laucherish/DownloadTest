@@ -81,6 +81,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_stop:
                 stopService(new Intent(MainActivity.this, DownloadService.class));
                 break;
+
         }
     }
 
