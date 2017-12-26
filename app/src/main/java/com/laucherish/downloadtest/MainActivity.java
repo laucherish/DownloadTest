@@ -82,6 +82,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 stopService(new Intent(MainActivity.this, DownloadService.class));
                 break;
         }
+
     }
 
     @Override
