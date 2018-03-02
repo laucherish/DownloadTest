@@ -67,6 +67,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             return;
         }
 
+
         switch (view.getId()) {
             case R.id.btn_start:
                 String url = "http://ftp.jaist.ac.jp/pub/eclipse/oomph/epp/oxygen/R/eclipse-inst-mac64.tar.gz";
