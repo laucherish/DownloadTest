@@ -51,8 +51,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnCancel.setOnClickListener(this);
         mBtnStop.setOnClickListener(this);
 
-
-
         Intent intent = new Intent(this, DownloadService.class);
         startService(intent);
         bindService(intent, mConnection, BIND_AUTO_CREATE);
